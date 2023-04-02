@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="favicon.ico">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/7b0357f5f0.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="game.js"></script>
+  <title>Game of Life</title>
+</head>
+
+<body>
+  <img src="images/g1.gif" class="g1">
+  <img src="images/o1.gif" class="o1">
+  <img src="images/o2.gif" class="o2">
+  <img src="images/o3.gif" class="o3">
+  <img src="images/o4.gif" class="o4">
+  <img src="images/c1.gif" class="c1">
+  <img src="images/still.png" class="still">
+  <img src="images/still2.png" class="still2">
+  <img src="images/still3.png" class="still3">
+  <img src="images/still4.png" class="still4">
+  <img src="images/still5.png" class="still5">
+  <div class="title">
+    <h1>Game of Life</h1>
+  </div>
+  <div class="container-fluid">
+  </div>
+  <div class="interface">
+    <div class="buttons">
+      <div class="btn btn-lg btn-outline-dark">
+        <i class="fa-solid fa-play"></i>
+      </div>
+      <div class="btn btn-lg btn-outline-dark restart">
+        <i class="fa-solid fa-arrow-rotate-left"></i>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="icon">
+        <i class="fa-solid fa-gauge-simple-high fa-lg"></i>
+      </div>
+      <div class="speed">
+        <input type="range" id="range" min="10" max="900" value="610">
+      </div>
+      <div class="size">
+        <i class="fa-solid fa-table-cells fa-lg"></i>
+        <div class="btn-group" role="group">
+          <button class="btn btn-outline-secondary btn-sm minus">
+            <i class="fa-solid fa-minus"></i>
+          </button>
+          <button class="btn btn-outline-primary btn-sm plus">
+            <i class="fa-solid fa-plus"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="dropdown menu">
+    <button class="btn btn-secondary" type="button" data-bs-toggle="dropdown">
+      <i class="fa-solid fa-bars"></i>
+    </button>
+    <ul class="dropdown-menu dropdown-menu-dark">
+      <li>
+        <a class="dropdown-item" href="https://conwaylife.com/wiki/" target="_blank">Conway's Game of Life Wiki</a>
+      </li>
+      <li><a class="dropdown-item" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+          Explanation</a></li>
+      <li><a class="dropdown-item" href="#">Patterns</a></li>
+    </ul>
+  </div>
+
+  <div class="modal fade" id="exampleModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Game of Life Explanation</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <p>The Game of Life is not your typical computer game. It is a cellular automaton, and was invented by
+            Cambridge mathematician John Conway.</p>
+          <p>This game became widely known when it was mentioned in an article published by Scientific American in 1970.
+            It consists of a grid of cells which, based on a few mathematical rules, can live, die or multiply.
+            Depending on the initial conditions, the cells form various patterns throughout the course of the game.</p>
+          <hr>
+          <h3>Rules</h3>
+          <h4>For a space that is populated:</h4>
+          <p>Each cell with one or no neighbors dies, as if by solitude.</p>
+          <p>Each cell with four or more neighbors dies, as if by overpopulation.</p>
+          <p>Each cell with two or three neighbors survives.</p>
+          <h4>For a space that is empty or unpopulated:</h4>
+          <p>Each cell with three neighbors becomes populated.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-lg btn-outline-light close" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>

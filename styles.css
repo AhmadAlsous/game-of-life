@@ -1,0 +1,170 @@
+body {
+  text-align: center;
+  background-color: black;
+  /* background-color: white; */
+}
+
+h1 {
+  margin: 0;
+  font-size: 40px;
+  letter-spacing: -2px;
+  color: rgb(255, 255, 255);
+}
+
+img {
+  position: absolute;
+  z-index: -1;
+}
+
+.title {
+  position: absolute;
+  margin-top: 5px;
+  font-family: "Press Start 2P", cursive;
+}
+
+.container-fluid {
+  margin: 50px auto 10px;
+  padding: 0;
+  display: inline-block;
+  width: fit-content;
+}
+
+.btn {
+  width: 50px;
+  margin: 0 10px;
+}
+
+.square {
+  background-color: rgb(120, 120, 120);
+  /* background-color: black; */
+  height: 25px;
+  width: 25px;
+  border: 0.01px solid rgba(164, 164, 164, 0.486);
+  display: inline-block;
+}
+
+.interface {
+  background-color: azure;
+  margin: 0 600px;
+  padding: 5px 0;
+  border-radius: 10px;
+}
+
+.controls {
+  margin: 10px auto 0;
+  padding: 5px;
+}
+
+.speed {
+  display: inline;
+}
+
+.icon {
+  display: inline;
+  position: relative;
+  bottom: 2px;
+  margin-right: 5px;
+}
+
+.size {
+  margin-top: 10px;
+}
+
+.clicked {
+  background-color: yellow;
+  /* background-color: white; */
+
+}
+
+.menu {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.modal-dialog {
+  --bs-modal-color: white;
+  --bs-modal-bg: #22262a;
+  text-align: left;
+}
+
+.close {
+  width: 100px;
+}
+
+.g1 {
+  left: 0;
+  top: 0;
+  width: 150px;
+  height: 150px;
+}
+
+.o1 {
+  left: -10px;
+  top: 300px;
+  width: 250px;
+  height: 250px;
+}
+
+.o2 {
+  right: 50px;
+  top: 0;
+  width: 200px;
+  height: 200px;
+}
+
+.o3 {
+  right: 0;
+  top: 300px;
+  width: 200px;
+  height: 200px;
+}
+
+.o4 {
+  right: 50px;
+  top: 500px;
+  width: 200px;
+  height: 200px;
+}
+
+.c1 {
+  right: 300px;
+  top: 550px;
+  width: 200px;
+  height: 200px;
+}
+
+.still {
+  left: 300px;
+  top: 550px;
+  width: 70px;
+  height: 70px;
+}
+
+.still2 {
+  right: 150px;
+  top: 150px;
+  width: 70px;
+  height: 70px;
+}
+
+.still3 {
+  left: 100px;
+  top: 200px;
+  width: 70px;
+  height: 70px;
+}
+
+.still4 {
+  left: 100px;
+  top: 600px;
+  width: 70px;
+  height: 70px;
+}
+
+.still5 {
+  right: 0;
+  top: 200px;
+  width: 70px;
+  height: 70px;
+}

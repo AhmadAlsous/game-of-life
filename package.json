@@ -1,0 +1,14 @@
+{
+  "name": "game-of-life",
+  "version": "1.0.0",
+  "description": "Conway's Game of Life",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "Ahmad Alsous",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.3"
+  }
+}
